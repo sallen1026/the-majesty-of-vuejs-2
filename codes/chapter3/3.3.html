@@ -3,12 +3,13 @@
     <title>Hello Vue</title>
 </head>
 <body>
-<div id="app">
+<div id="app" text style="text-align: center">
     <h1 v-if="!message">You must send a message for help!</h1>
     <h2 v-else>You have sent a message!</h2>
     <textarea v-model="message"></textarea>
+    <br>
     <button v-show="message">
-        Send word to allies for help!
+        Send message
     </button>
     <pre>
         {{ $data }}
