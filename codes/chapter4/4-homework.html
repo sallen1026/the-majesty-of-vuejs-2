@@ -5,12 +5,10 @@
 </head>
 <body>
   <div class="container">
-      <h1>Let's hear some stories!</h1>
+      <h1>This is me!</h1>
       <ul class="list-group">
           <!-- turns out the order of these in v-for is important! -->
-          <li v-for="(value, key, index) in story"
-               class="list-group-item"
-               >
+          <li v-for="(value, key, index) in story" class="list-group-item">
               {{index}} : {{key}} : {{value}}
           </li>
       </ul>
@@ -22,10 +20,11 @@ new Vue({
     el: '.container',
     data: {
         story: {
-            plot: "Someone ate my chocolate...",
-            writer: 'John',
-            upvotes: 47,
-            publisher: "Harper"
+            name: "ChiliDog DaddyO",
+            height: '6 foot 3 inches',
+            weight: "230 lbs",
+            eyeColor: "Brown",
+            favoriteFood: "Hamburgers"
         }
     }
 })
